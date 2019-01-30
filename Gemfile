@@ -6,3 +6,6 @@ gemspec
 group :test do
   gem "rubocop", require: false
 end
+
+gem "codecov", require: false, group: :test
+gem "simplecov", require: false, group: :test
