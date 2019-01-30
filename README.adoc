@@ -1,5 +1,25 @@
 == ProfileModel
 
+ifdef::env-github[]
+image:https://img.shields.io/gem/v/profile_model.svg[
+	Gem Version, link="https://rubygems.org/gems/profile_model"]
+image:https://img.shields.io/travis/riboseinc/profile_model/master.svg[
+	Build Status, link="https://travis-ci.org/riboseinc/profile_model/branches"]
+image:https://img.shields.io/codecov/c/github/riboseinc/profile_model.svg[
+	Test Coverage, link="https://codecov.io/gh/riboseinc/profile_model"]
+// image:https://img.shields.io/codeclimate/coverage/riboseinc/profile_model.svg[
+//	Test Coverage, link="https://codeclimate.com/github/riboseinc/profile_model"]
+image:https://img.shields.io/codeclimate/maintainability/riboseinc/profile_model.svg[
+	Code Climate, link="https://codeclimate.com/github/riboseinc/profile_model"]
+endif::[]
+
+ifdef::env-gitlab[]
+image:https://img.shields.io/gem/v/profile_model.svg[
+	Gem Version, link="https://rubygems.org/gems/profile_model"]
+image:https://img.shields.io/gitlab/pipeline/riboseinc/profile_model.svg[
+	GitLab pipeline, link="https://gitlab.com/riboseinc/profile_model/pipelines"]
+endif::[]
+
 Welcome to your new gem! In this directory, you’ll find the files you need to be
 able to package up your Ruby library into a gem. Put your Ruby code in the file
 `lib/profile_model`. To experiment with that code, run `bin/console` for an
