@@ -1,0 +1,20 @@
+---
+
+image:
+  name: ruby:2.6.0
+
+stages:
+  - test
+
+before_script:
+  - gem install bundler
+  - bundle install
+
+cache:
+  paths:
+  - /cache
+
+test:
+  stage: test
+  script: |
+    bundle exec rspec
