@@ -3,5 +3,22 @@ sudo: false
 language: ruby
 cache: bundler
 rvm:
-  - 2.5.3
+- '2.3'
+- '2.4'
+- '2.5'
+- '2.6'
 before_install: gem install bundler -v 2.0.1
+dist: xenial
+script:
+- bundle exec rspec
+matrix:
+  include:
+  - &1
+    gemfile: gemfiles/jruby.gemfile
+    rvm: jruby
+  - &2
+    gemfile: gemfiles/truffleruby.gemfile
+    rvm: truffleruby
+  allow_failures:
+  - *1
+  - *2
