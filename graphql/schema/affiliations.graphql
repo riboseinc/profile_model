@@ -1,0 +1,42 @@
+type Affiliation {
+  uid: String
+  description: String
+  organizations: [Organization]
+  affiliationRoles: [AffiliationRole]
+}
+
+type AffiliationRole {
+  title: String
+  department: String
+  validity: Validity
+  memorableDates: [MemorableDate]
+}
+
+type Validity {
+  validFrom: Date
+  validTo: Date
+}
+
+type Availiablity {
+  availableDates: [Date]
+  availableExclusions: [Date]
+}
+
+type Organization {
+  uid: String
+  name: String
+}
+
+input OrganizationNameQuery {
+  startsWith: String
+  endsWith: String
+  includes: String
+  equals: String
+}
+
+input AffiliationQuery {
+  organizationName: OrganizationNameQuery
+  # ,
+  # at: Date,
+  # title: String
+}

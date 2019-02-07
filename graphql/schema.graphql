@@ -1,0 +1,24 @@
+# import { ContactBook, ContactBookQuery } from "graphql/schema/contact-books.graphql"
+# import { Person, PersonInput } from "graphql/schema/persons.graphql"
+# import { PersonalInformationQuery } from "graphql/schema/personal-information.graphql"
+# import { AffiliationQuery } from "graphql/schema/affiliations.graphql"
+
+type Query {
+  allContactBooks: [ContactBook]
+  allPeople: [Person]
+  findPeople(
+    contactBook: ContactBookQuery
+    personalInformation: PersonalInformationQuery
+    affiliation: AffiliationQuery
+  ): [Person]
+}
+
+type Mutation {
+  addPerson(
+    contactBookId: String
+    person: PersonInput
+  ): Person
+  removePerson(
+    personId: String
+  ): String
+}

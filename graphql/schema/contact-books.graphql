@@ -1,0 +1,10 @@
+type ContactBook {
+  uid: String!
+  name: String
+  collection: [Person]
+}
+
+input ContactBookQuery {
+  uid: String
+  name: String
+}

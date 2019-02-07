@@ -1,0 +1,77 @@
+[
+  {
+    "uid": "person001",
+    "contactBookId": "abcd",
+    "firstName": "Thomas",
+    "lastName": "Robinson",
+    "gender": "MALE",
+    "birthday": "1984-05-31",
+    "affiliations": [
+      {
+        "uid": "affiliation001",
+        "organizationId": "organization001",
+        "roles": [
+          {
+            "title": "Senior Software Engineer",
+            "department": "R&D",
+            "since": "2014-05-12"
+          },
+          {
+            "title": "Software Engineer",
+            "department": "R&D",
+            "since": "2011-12-10",
+            "until": "2014-05-11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "person002",
+    "contactBookId": "abcd",
+    "firstName": "David",
+    "lastName": "Thompson",
+    "gender": "MALE",
+    "affiliations": [
+      {
+        "uid": "affiliation002",
+        "organizationId": "organization001",
+        "roles": [
+          {
+            "title": "Intern",
+            "department": "Marketing",
+            "since": "2019-07-15",
+            "until": "2019-08-31"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "person003",
+    "contactBookId": "efgh",
+    "firstName": "Serena",
+    "lastName": "Winston",
+    "gender": "FEMALE"
+  },
+  {
+    "uid": "person004",
+    "contactBookId": "abcd",
+    "firstName": "Pauline",
+    "lastName": "Watson",
+    "gender": "FEMALE",
+    "birthday": "1985-06-30",
+    "affiliations": [
+      {
+        "uid": "affiliation003",
+        "organizationId": "organization003",
+        "roles": [
+          {
+            "title": "CEO",
+            "since": "2014-05-12"
+          }
+        ]
+      }
+    ]
+  }
+]

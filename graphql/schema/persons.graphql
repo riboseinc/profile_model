@@ -1,0 +1,13 @@
+# import { PersonalInformation } from "personal-information.graphql"
+# import { Affiliation } from "affiliations.graphql"
+
+type Person {
+  uid: String!
+  personalInformation: PersonalInformation
+  affiliations: [Affiliation]
+}
+
+input PersonInput {
+  personalInformation: PersonalInformationInput
+  # affiliations: [AffiliationInput]
+}

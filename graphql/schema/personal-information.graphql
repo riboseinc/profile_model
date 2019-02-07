@@ -1,0 +1,69 @@
+type PersonalInformation {
+  name: PersonalName!
+  gender: Gender
+  emails: [String]
+  memorableDates: [MemorableDate]
+}
+
+type PersonalName {
+  firstName: String
+  lastName: String
+}
+
+type MemorableDate {
+  date: Date!
+  # time: Time
+  type: MemorableDateType!
+  description: String
+}
+
+scalar Date
+scalar Time
+
+enum Gender {
+  MALE
+  FEMALE
+  OTHERS
+}
+
+enum MemorableDateType {
+  BIRTHDAY
+  ANNIVERSARY
+  OTHERS
+}
+
+input MemorableDateQuery {
+  date: Date
+  # time: Time
+  type: MemorableDateType
+  description: String
+}
+
+input PersonalInformationQuery {
+  name: PersonalNameQuery
+  gender: Gender
+  memorableDate: MemorableDateQuery
+}
+
+input PersonalInformationInput {
+  name: PersonalNameInput
+  gender: Gender
+  memorableDates: [MemorableDateInput]
+}
+
+input PersonalNameInput {
+  firstName: String
+  lastName: String
+}
+
+input MemorableDateInput {
+  date: Date
+  # time: Time
+  type: MemorableDateType
+  description: String
+}
+
+input PersonalNameQuery {
+  firstName: String
+  lastName: String
+}
